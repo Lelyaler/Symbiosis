@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Symbiosis</title>
+  </head>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__nav">
+           <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link" href="#">О клубе</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Правила клуба</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Форум</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Партнерская программа</a>
+            </li>
+           </ul>
+          </div>
+          <div class="header__language">
+            <span class="language-label">Язык:</span>
+            <div class="language-dropdown">
+                <div class="language-flag">
+                  <svg width="27" height="7" viewBox="0 0 27 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 0.75H3C2.20435 0.75 1.44129 1.06607 0.87868 1.62868C0.316071 2.19129 0 2.95435 0 3.75L0 6.75H27V3.75C27 2.95435 26.6839 2.19129 26.1213 1.62868C25.5587 1.06607 24.7956 0.75 24 0.75Z" fill="#EEEEEE" />
+                  </svg><svg width="27" height="9" viewBox="0 0 27 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0.75H27V8.25H0V0.75Z" fill="#22408C" />
+                  </svg><svg width="27" height="7" viewBox="0 0 27 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27 3.25C27 4.04565 26.6839 4.80871 26.1213 5.37132C25.5587 5.93393 24.7956 6.25 24 6.25H3C2.20435 6.25 1.44129 5.93393 0.87868 5.37132C0.316071 4.80871 0 4.04565 0 3.25V0.25H27V3.25Z" fill="#CE2028" />
+                  </svg>
+                </div>
+                <span class="language-selected">Россия</span>
+                <span class="language-arrow">
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.45882 0.515268C1.39517 0.455122 1.3203 0.408103 1.23848 0.376893C1.15666 0.345682 1.0695 0.330893 0.981961 0.333369C0.894426 0.335845 0.808236 0.355538 0.728312 0.391324C0.648389 0.42711 0.576296 0.478287 0.51615 0.541935C0.456005 0.605582 0.408985 0.680453 0.377775 0.762272C0.346564 0.844091 0.331775 0.931256 0.334251 1.01879C0.336727 1.10633 0.35642 1.19252 0.392206 1.27244C0.427992 1.35236 0.47917 1.42446 0.542817 1.4846L6.54282 7.15127C6.6666 7.26829 6.83048 7.3335 7.00082 7.3335C7.17116 7.3335 7.33504 7.26829 7.45882 7.15127L13.4595 1.4846C13.5245 1.42485 13.577 1.35278 13.614 1.27256C13.6509 1.19234 13.6716 1.10558 13.6747 1.01732C13.6779 0.929055 13.6634 0.841048 13.6323 0.75841C13.6011 0.675773 13.5538 0.600151 13.4932 0.535937C13.4326 0.471723 13.3598 0.420197 13.279 0.384354C13.1983 0.348509 13.1113 0.329061 13.023 0.327138C12.9347 0.325215 12.8469 0.340856 12.7647 0.373152C12.6825 0.405447 12.6075 0.453755 12.5442 0.515268L7.00082 5.74993L1.45882 0.515268Z" fill="#F8F8F8" />
+                    </svg>
+                </span>
+            </div>
+            <div class="language-options" id="language-options">
+                <div class="language-option">
+                    <div class="language-flag">
+                      <svg width="27" height="7" viewBox="0 0 27 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 0.75H3C2.20435 0.75 1.44129 1.06607 0.87868 1.62868C0.316071 2.19129 0 2.95435 0 3.75L0 6.75H27V3.75C27 2.95435 26.6839 2.19129 26.1213 1.62868C25.5587 1.06607 24.7956 0.75 24 0.75Z" fill="#EEEEEE" />
+                      </svg><svg width="27" height="9" viewBox="0 0 27 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0.75H27V8.25H0V0.75Z" fill="#22408C" />
+                      </svg><svg width="27" height="7" viewBox="0 0 27 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27 3.25C27 4.04565 26.6839 4.80871 26.1213 5.37132C25.5587 5.93393 24.7956 6.25 24 6.25H3C2.20435 6.25 1.44129 5.93393 0.87868 5.37132C0.316071 4.80871 0 4.04565 0 3.25V0.25H27V3.25Z" fill="#CE2028" />
+                      </svg>
+                    </div>
+                    Россия
+                </div>
+                <div class="language-option">
+                    <div class="language-flag">
+                        <img src="images/icons/flag/flag-united-kingdom.svg" alt="flag-united">
+                    </div>
+                    UK
+                </div>
+    
+                <div class="language-option">
+                    <div class="language-flag">
+                      <svg width="27" height="7" viewBox="0 0 27 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 0.75H3C2.20435 0.75 1.44129 1.06607 0.87868 1.62868C0.316071 2.19129 0 2.95435 0 3.75L0 6.75H27V3.75C27 2.95435 26.6839 2.19129 26.1213 1.62868C25.5587 1.06607 24.7956 0.75 24 0.75Z" fill="#000000" />
+                      </svg>
+                      <svg width="27" height="9" viewBox="0 0 27 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0.75H27V8.25H0V0.75Z" fill="#CE2028" />
+                      </svg>
+                      <svg width="27" height="7" viewBox="0 0 27 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27 3.25C27 4.04565 26.6839 4.80871 26.1213 5.37132C25.5587 5.93393 24.7956 6.25 24 6.25H3C2.20435 6.25 1.44129 5.93393 0.87868 5.37132C0.316071 4.80871 0 4.04565 0 3.25V0.25H27V3.25Z" fill="#FFD700" />
+                      </svg>
+                    </div>
+                    Германия 
+                </div>
+                <div class="language-option">
+                  <div class="language-flag">
+                    <div class="language-flag">
+                        <img src="images/icons/flag/ukraine-flag-icon.svg" alt="flag-united">
+                    </div>
+                  </div>
+                  Украина
+                </div>
+                <div class="language-option">
+                  <div class="language-flag">
+                    <div class="language-flag">
+                        <img src="images/icons/flag/france-flag-icon.svg" alt="france-flag">
+                    </div>
+                  </div>
+                  Франция
+                </div>
+                <div class="language-option">
+                  <div class="language-flag">
+                    <div class="language-flag">
+                        <img src="images/icons/flag/italy-flag-icon.svg" alt="italy-flag">
+                    </div>
+                  </div>
+                  Италия
+                </div>
+            </div>
+            <button class="login-button button">Войти</button>
+        </div>
+        
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__container container">
+          <div class="header__logo">
+            <img
+              class="logo"
+              src="images/logo/ЛОГО.svg"
+              alt="logo"
+            />
+          </div>
+          <div class="burger">
+            <span class="burger__item"></span>
+          </div>
+          
+          <nav class="header__menu">
+            <ul class="menu__items">
+              <li class="menu__item">
+                <img src="images/icons/Главная.svg" alt="home">
+                <a class="menu__link" href="#">Главная</a>
+              </li>
+              <li class="menu__item">
+                <img src="images/icons/Миссия клуба.svg" alt="home">
+                <a class="menu__link" href="#">Миссия клуба</a>
+              </li>
+              <li class="menu__item">
+                <img src="images/icons/Команда.svg" alt="home">
+                <a class="menu__link" href="#">Команда</a>
+              </li>
+              <li class="menu__item">
+                <img src="images/icons/Мероприятия.svg" alt="home">
+                <a class="menu__link" href="#">Мероприятия</a>
+              </li>
+              <li class="menu__item">
+                <img src="images/icons/Инструменты.svg" alt="home">
+                <a class="menu__link" href="#">Инструменты</a>
+              </li>
+              <li class="menu__item">
+                <img src="images/icons/Контакты.svg" alt="home">
+                <a class="menu__link" href="#">Контакты</a>
+              </li> 
+            </ul>
+         </nav>
+       </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <button class="login-button button mobile-login">Войти</button>
+        <div class="intro__container container">
+          <div class="intro__content">
+            <h2 class="intro__subtitle">КЛУБ ПРЕДПРИНИМАТЕЛЕЙ</h2>
+            <h1 class="intro__title">Симбиоз</h1>
+           <div class="intro__text">
+            <img class="intro__line" src="images/Line 82.svg" alt="line">
+              <p class="intro__info">
+              Международное деловое сообщество 
+              </p>
+           </div>
+           <div class="intro__btn">
+            <button class="intro__button button">
+              <a href="#">Вступить в клуб</a>
+            </button>
+            <button class="intro__button button-color">
+              <a href="#">Слова основателей</a>
+            </button>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container container">
+          <div class="about__content">
+            <div class="content__video">
+               <h3 class="video__title">ПРОСМОТРИТЕ КОРОТКОЕ ВИДЕО О КЛУБЕ</h3>
+               <div class="video__size">
+                  <img src="images/icons/time.svg" alt="time">
+                  <p>(1 мин.  30 сек.)</p>
+               </div>
+               <div class="video__container">
+                <iframe
+                  width="1180"
+                  height="664"
+                  src="https://www.youtube.com/embed/v5YTZovxUQE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  style="border-radius: 6px;"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map-image">
+        <div class="map-image__container container">
+            <svg class="interactive-map" viewBox="0 0 1250 1036">
+                <image href="images/1250 без надписи.png" width="1250" height="1036" />
+                <a  href="#telegram">
+                  <g class="map-area" transform="translate(440, 70)">
+                    <text class="map-area__text" x="75" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                        <tspan x="75" dy="0">Телеграм</tspan>
+                        <tspan x="75" dy="1.2em">чаты</tspan>
+                    </text>
+                  </g>
+                </a>
+                
+                <a href="#offline-meetings">
+                  <g class="map-area" transform="translate(790, 80)">
+                    <rect x="0" y="0" width="300" height="100" fill="transparent" />
+                    <text class="map-area__text" x="75" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                        оффлайн-<tspan x="75" dy="1.2em">встречи</tspan>
+                    </text>
+                </g>
+                </a>
+
+                <a href="#email">
+                    <g class="map-area" transform="translate(70, 130)">
+                        <rect x="0" y="0" width="250" height="90" fill="transparent" />
+                        <text class="map-area__text" x="125" y="15" fill="white" text-anchor="middle" alignment-baseline="middle">
+                          Круговая<tspan x="125" dy="1.2em">e-mail</tspan><tspan x="125" dy="1.2em">рассылка</tspan>
+                        </text> 
+                    </g>
+                </a>
+                
+                <a href="#club-platform">
+                    <g class="map-area" transform="translate(65, 270)">
+                        <rect x="0" y="0" width="250" height="100" fill="transparent" />
+                        <text class="map-area__text" x="125" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                          Платформа -<tspan x="125" dy="1.2em">клуба</tspan>
+                        </text>
+                   </g>
+                </a>
+
+                <a href="#forum">
+                    <g class="map-area" transform="translate(100, 420)">
+                        <rect x="0" y="0" width="220" height="100" fill="transparent" />
+                        <text class="map-area__text" x="110" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                          Интернет<tspan x="110" dy="1.2em">форум</tspan>
+                      </text>
+                     </g>
+                </a>
+
+                <a href="#master-classes">
+                    <g class="map-area" transform="translate(50, 620)">
+                        <rect x="0" y="0"  width="220" height="100" fill="transparent" />
+                        <text class="map-area__text" x="110" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                          Мастер -<tspan x="110" dy="1.2em">классы</tspan>
+                      </text> 
+                    </g>
+                </a>
+
+                <a href="#master-minds">
+                    <g class="map-area" transform="translate(50, 780)">
+                        <rect x="0" y="0" width="200" height="100" fill="transparent" />
+                        <text class="map-area__text" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                          Мастер-<tspan x="100" dy="1.2em">майнды</tspan>
+                      </text> 
+                    </g>
+                </a>
+
+                <a href="#expert-lectures">
+                    <g class="map-area" transform="translate(150, 890)">
+                        <rect x="0" y="0" width="250" height="100" fill="transparent" />
+                        <text class="map-area__text" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                          Лекции<tspan x="100" dy="1.2em">экспертов</tspan>
+                      </text> 
+                    </g>
+                </a>
+
+                <a href="#entrepreneurs-meetings">
+                    <g class="map-area" transform="translate(440, 760)">
+                        <rect x="0" y="0" width="300" height="100" fill="transparent" />
+                        <text class="map-area__text" x="150" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                          Встречи с<tspan x="150" dy="1.2em">предпринимателями</tspan>
+                       </text> 
+                    </g>
+                </a>
+      
+                <a href="#junior-partners">
+                  <g class="map-area" transform="translate(610, 870)">
+                      <rect x="0" y="0" width="250" height="100" fill="transparent" />
+                      <text class="map-area__text" x="125" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                        Институт<tspan x="125" dy="1.2em">младших</tspan><tspan x="125" dy="1.2em">партнёров</tspan>
+                      </text> 
+                  </g>
+                </a>
+
+                <a href="#mentoring">
+                  <g class="map-area" transform="translate(985, 875)">
+                      <rect x="0" y="0" width="300" height="100" fill="transparent" />
+                      <text class="map-area__text" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">Наставничество</text>
+                  </g>
+                </a>
+
+                <a href="#expert-committees">
+                  <g class="map-area" transform="translate(1060, 730)">
+                      <rect x="0" y="0" width="250" height="100" fill="transparent" />
+                      <text class="map-area__text" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                        Экспертные<tspan x="100" dy="1.2em">комитеты</tspan>
+                    </text> 
+                  </g>
+                </a>
+
+                <a href="#board-of-directors">
+                  <g class="map-area" transform="translate(1060, 615)">
+                      <rect x="0" y="0" width="250" height="100" fill="transparent" />
+                      <text class="map-area__text" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                        Советы<tspan x="100" dy="1.2em">директоров</tspan>
+                     </text> 
+                  </g>
+                </a>
+
+                <a href="#business-excursions">
+                    <g class="map-area" transform="translate(1030, 350)">
+                        <rect x="0" y="0" width="300" height="100" fill="transparent" />
+                        <text class="map-area__text" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                          Экскурсии<tspan x="100" dy="1.2em">в бизнесы</tspan>
+                      </text>  
+                    </g>
+                </a>
+                    
+                <a href="#joint-travel">
+                    <g class="map-area" transform="translate(1050, 190)">
+                        <rect x="0" y="0" width="300" height="100" fill="transparent" />
+                        <text class="map-area__text" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                          Совместные<tspan x="100" dy="1.2em">путешествия</tspan>
+                        </text>  
+                    </g>
+                </a>
+            </svg>
+        </div>
+      </section>
+      <section class="map-image__mobile">
+        <div class="map-image__mobile__container container">
+          <svg class="interactive-map__mobail" viewBox="0 0 414 1043">
+            <image class="map-img" href="images/414 без надписи.png" width="414" height="1043" />
+            <a class="map-item" href="#telegram">
+              <g class="map-area" transform="translate(20, 260)">
+                <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                <text class="map-area__text text__mobail" x="75" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                  <tspan x="75" dy="0">Телеграм</tspan>
+                  <tspan x="75" dy="1.2em">чаты</tspan>
+                </text>
+              </g>
+            </a>
+            <a href="#email">
+              <g class="map-area" transform="translate(-15, 325)">
+                  <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                  <text class="map-area__text text__mobail" x="125" y="15" fill="white" text-anchor="middle" alignment-baseline="middle">
+                    Круговая<tspan x="125" dy="1.2em">e-mail</tspan><tspan x="125" dy="1.2em">рассылка</tspan>
+                  </text> 
+              </g>
+            </a>
+            <a href="#club-platform">
+                <g class="map-area" transform="translate(-7, 415)">
+                    <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                    <text class="map-area__text text__mobail" x="125" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                      Платформа -<tspan x="125" dy="1.2em">клуба</tspan>
+                    </text>
+               </g>
+            </a>
+            <a href="#forum">
+                <g class="map-area" transform="translate(-23, 485)">
+                    <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                    <text class="map-area__text text__mobail" x="110" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                      Интернет<tspan x="110" dy="1.2em">форум</tspan>
+                  </text>
+                 </g>
+            </a>
+            <a href="#master-classes">
+                <g class="map-area" transform="translate(10, 620)">
+                    <rect x="0" y="0"  width="100" height="50" fill="transparent" />
+                    <text class="map-area__text text__mobail" x="110" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                      Мастер -<tspan x="110" dy="1.2em">классы</tspan>
+                  </text> 
+                </g>
+            </a>
+            <a href="#master-minds">
+                <g class="map-area" transform="translate(-6, 680)">
+                    <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                    <text class="map-area__text text__mobail" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                      Мастер-<tspan x="100" dy="1.2em">майнды</tspan>
+                  </text> 
+                </g>
+            </a>
+            <a href="#expert-lectures">
+                <g class="map-area" transform="translate(35, 748)">
+                    <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                    <text class="map-area__text text__mobail" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                      Лекции<tspan x="100" dy="1.2em">экспертов</tspan>
+                  </text> 
+                </g>
+            </a>
+            <a href="#entrepreneurs-meetings">
+                <g class="map-area" transform="translate(-15, 814)">
+                    <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                    <text class="map-area__text text__mobail" x="150" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                      Встречи с<tspan x="150" dy="1.2em">предпринимателями</tspan>
+                   </text> 
+                </g>
+            </a>
+             <a href="#offline-meetings">
+              <g class="map-area" transform="translate(280, 340)">
+                <rect x="0" y="0" width="100" height="50"fill="transparent" />
+                <text class="map-area__text text__mobail" x="75" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                    оффлайн-<tspan x="75" dy="1.2em">встречи</tspan>
+                </text>
+               </g>
+            </a>
+            <a href="#joint-travel">
+              <g class="map-area" transform="translate(260, 427)">
+                  <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                  <text class="map-area__text text__mobail" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                    Совместные<tspan x="100" dy="1.2em">путешествия</tspan>
+                  </text>  
+              </g>
+            </a>
+            <a href="#business-excursions">
+              <g class="map-area" transform="translate(257, 527)">
+                  <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                  <text class="map-area__text text__mobail" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                    Экскурсии<tspan x="100" dy="1.2em">в бизнесы</tspan>
+                </text>  
+              </g>
+            </a>
+            <a href="#board-of-directors">
+              <g class="map-area" transform="translate(250, 735)">
+                  <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                  <text class="map-area__text text__mobail" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                    Советы<tspan x="100" dy="1.2em">директоров</tspan>
+                </text> 
+              </g>
+            </a>
+            <a href="#expert-committees">
+              <g class="map-area" transform="translate(260, 815)">
+                  <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                  <text class="map-area__text text__mobail" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                    Экспертные<tspan x="100" dy="1.2em">комитеты</tspan>
+                </text> 
+              </g>
+            </a>
+            <a href="#mentoring">
+              <g class="map-area" transform="translate(247, 900)">
+                  <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                  <text class="map-area__text text__mobail" x="100" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">Наставничество</text>
+              </g>
+            </a>
+            <a href="#junior-partners">
+              <g class="map-area" transform="translate(220, 975)">
+                  <rect x="0" y="0" width="100" height="50" fill="transparent" />
+                  <text class="map-area__text text__mobail" x="125" y="25" fill="white" text-anchor="middle" alignment-baseline="middle">
+                    Институт<tspan x="125" dy="1.2em">младших</tspan><tspan x="125" dy="1.2em">партнёров</tspan>
+                  </text> 
+              </g>
+            </a>
+          </svg>
+        </div>
+      </section>
+      <section class="statistics">
+        <div class="statistics__container container">
+          <div class="statistics__content">
+            <div class="statistics__cards">
+              <div class="statistics__card">
+                <div class="card__number">
+                  <span class="card__number">253</span>
+                </div>
+                <div class="card__text">
+                  <p class="card__text-content">253 резидента в Клубе и это число планомерно растет!</p>
+                </div>
+              </div>
+              <div class="statistics__card">
+                <div class="card__number">
+                  <span class="card__number">35</span>
+                </div>
+                <div class="card__text">
+                  <p class="card__text-content">35 городов из 7 Стран!</p>
+                </div>
+              </div>
+              <div class="statistics__card">
+                <div class="card__number">
+                  <span class="card__number">43</span>
+                </div>
+                <div class="card__text">
+                  <p class="card__text-content">43 миллиарда рублей - суммарная выручка резидентов Клуба!</p>
+                </div>
+              </div>
+              <div class="statistics__card">
+                <div class="card__number">
+                  <span class="card__number">1</span>
+                </div>
+                <div class="card__text">
+                  <p class="card__text-content">1 миллион рублей - тратим мы ежемесячно на развитие Клуба!</p>
+                </div>
+              </div>
+              <div class="statistics__card">
+                <div class="card__number">
+                  <span class="card__number">7</span>
+                </div>
+                <div class="card__text">
+                  <p class="card__text-content">В 7 раз в среднем у резидента Клуба окупается оплата членского взноса</p>
+                </div>
+              </div>
+              <div class="statistics__card">
+                <div class="card__number">
+                  <span class="card__number">50</span>
+                </div>
+                <div class="card__text">
+                  <p class="card__text-content">В среднем 50 мероприятий в год мы проводим в Клубе!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="new__container container">
+          <div class="news-content">
+            <div class="news-blog col1">
+              <h2 class="news-blog__title">НОВОСТИ</h2>
+              <div class="news-item">
+                <span class="news-date">10.01.2024</span>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="news-item">
+                <span class="date">10.01.2024</span>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="news-item">
+                <span class="date">10.01.2024</span>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <div class="events-blog col2">
+              <div class="events-header">
+                <div class="month-slider">
+                  <div class="month-btn prev">
+                    <img src="images/icons/Polygon2.svg" alt="arrow">
+                  </div>
+                  <span class="current-month">ФЕВРАЛЬ 2024</span>
+                  <button class="month-btn next">
+                    <img src="images/icons/Polygon3.svg" alt="arrow">
+                  </button>
+                </div>                
+                <h2 class="events-blog__title">МЕРОПРИЯТИЯ</h2>
+              </div>
+              <div class="event-content">
+                <div class="event-top">
+                  <span class="date">14.02.2024</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>  
+              </div>
+              <div class="event-content">
+                <div class="event-top">
+                  <span class="date">14.02.2024</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>  
+              </div>
+              <div class="event-content">
+                <div class="event-top">
+                  <span class="date">14.02.2024</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>  
+              </div>     
+            </div>
+            <div class="tours-blog col3">
+              <h2 class="tours-blog__title">ПУТЕШЕСТВИЯ</h2>
+              <div class="tours-cards">
+                <h3 class="tours-blog__subtitle">Июнь 2024. Санкт-Петербург.</h3>
+                <div class="tours-card">
+                  <img src="images/photo news.png" alt="photo news">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua  </p>
+                </div>
+                <p>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div>
+              <div class="tours-cards">
+                <h3 class="tours-blog__subtitle">Июнь 2024. Санкт-Петербург.</h3>
+                <div class="tours-card">
+                  <img src="images/photo news.png" alt="photo news">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua  </p>
+                </div>
+                <p>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__container container">
+          <div class="subscribe-content">
+            <div class="subscribe-left">
+              <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА НАШУ РАССЫЛКУ НОВОСТЕЙ</h2>
+              <h3 class="form-subtitle__news">Только полезные новости раз в неделю! Никакого спама!</h3>
+            </div>
+           <div class="subscribe-right">
+              <form class="subscribe-form">
+                <input class="form-input" type="email" placeholder="Введите ваше e-mail" />
+                <button class="form-botton" type="submit">Подписаться</button>
+              </form>
+              <p class="form-subtitle">Нажимая "Подписаться", вы соглашаетесь с Политикой конфиденциальности</p>
+            </div>
+          </div>
+          <svg width="1180" height="202" viewBox="0 0 1180 202" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 28.9976C0 12.597 13.5892 -0.540319 29.9804 0.0141443L1151.98 37.9679C1167.61 38.4965 1180 51.3167 1180 66.9513V150.19C1180 165.982 1167.36 178.871 1151.57 179.184L29.5745 201.414C13.3366 201.736 0 188.661 0 172.42V28.9976Z" fill="#020C78" />
+          </svg>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__block">
+        <div class="container">
+         <div class="footer__content">
+            <div class="footer__nav">
+              <ul class="footer__menu">
+                <li class="footer__menu-list">
+                  <a href="" class="footer__menu-link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                </li>
+                <li class="footer__menu-list">
+                  <a href="" class="footer__menu-link">ОФЕРТА КЛУБА</a>
+                </li>
+                <li class="footer__menu-list">
+                  <a href="" class="footer__menu-link">ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-name">
+              <h2 class="footer-name">Клуб Предпринимателей "Симбиоз"</h2>
+              <p class="footer-name">&copy; 2023-2024, <span class="footer__company-name">Клуб Предпринимателей "Симбиоз"</span></p>
+              <p class="footer-name">ООО "Атлант", ИНН: <span class="footer__inn">6952322771</span></p>
+              <p class="footer-name">Связь: <a class="footer__contact-link" href="https://web.whatsapp.com/send/?phone=79109339089">+79109339089</a></p>
+              <p class="footer-name">E-mail: <a class="footer__contact-link" href="mailto:support@symbioz.club">support@symbioz.club</a></p>
+            </div>
+         </div>
+        </div>
+      </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </div>
+</body>
+</html>
+

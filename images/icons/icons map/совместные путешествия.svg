@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="6.0938mm" height="5.4076mm" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 59 52"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str3 {stroke:#211F2E;stroke-width:0.814011;stroke-linecap:round;stroke-linejoin:round}
+    .str0 {stroke:#211F2E;stroke-width:1.62706;stroke-linecap:round;stroke-linejoin:round}
+    .str2 {stroke:#272D63;stroke-width:10.7609;stroke-linecap:round;stroke-linejoin:round}
+    .str1 {stroke:#211F2E;stroke-width:1.62706;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:20.766411 25.958014}
+    .fil1 {fill:none}
+    .fil3 {fill:#211F2E}
+    .fil2 {fill:#303AFD}
+    .fil4 {fill:#7B80B4}
+    .fil0 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1859142635648">
+   <path class="fil0 str0" d="M49 16l-9 2c0,1 0,2 -1,2 -1,0 -1,0 -2,-1l-28 8c-1,0 -2,2 -2,3l6 19c0,2 1,2 3,2l28 -8c0,0 0,-1 1,-1 1,-1 2,0 2,1l9 -3c1,0 2,-2 2,-3l-6 -19c0,-2 -2,-3 -3,-2z"/>
+   <path class="fil1 str1" d="M39 20l6 21"/>
+   <path class="fil2 str0" d="M37 30l-5 2 -6 -4 -1 0 3 5 -5 2 -2 -2 -2 0 2 3 1 1 -1 3 2 0 1 -3 5 -1 0 6 1 0 3 -7 5 -1c1,-1 2,-2 1,-2 0,-1 -1,-2 -2,-2z"/>
+   <g>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 42.4117 21.1114)" width="118.725" height="22.5078"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 43.1096 23.6201)" width="118.725" height="12.8233"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 43.5635 25.2723)" width="118.725" height="6.45635"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 43.89 26.4487)" width="118.725" height="14.7964"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 44.3476 28.1007)" width="118.725" height="8.60814"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 44.7294 29.4736)" width="118.725" height="17.2172"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 45.2644 31.3961)" width="118.725" height="5.37997"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 45.544 32.4215)" width="118.725" height="8.78786"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 45.9186 33.7586)" width="118.725" height="14.7964"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 46.407 35.5251)" width="118.725" height="8.60814"/>
+    <rect class="fil3" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 46.7812 36.8631)" width="118.725" height="29.9502"/>
+   </g>
+   <rect class="fil4" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 13.3681 30.281)" width="18.1139" height="230.636"/>
+   <rect class="fil4" transform="matrix(0.0680851 -0.0188635 0.0188635 0.0680853 9.94377 29.1985)" width="18.1139" height="286.144"/>
+   <path class="fil1 str2" d="M23 28l-5 2"/>
+   <path class="fil1 str2" d="M24 30l-4 1"/>
+   <path class="fil1 str3" d="M27 42l-5 2"/>
+   <path class="fil1 str0" d="M27 41l-4 1"/>
+   <path class="fil0 str0" d="M32 2l-7 6c1,0 0,1 0,2 -1,0 -2,0 -2,0l-21 20c-1,1 -1,3 0,4l13 14c1,1 3,1 4,0l21 -20c0,0 0,-1 0,-2 1,0 2,0 2,0l7 -6c1,-1 1,-3 0,-4l-13 -14c-1,-1 -3,-1 -4,0z"/>
+   <path class="fil1 str1" d="M25 10l15 16"/>
+   <path class="fil2 str0" d="M28 20l-4 4 -7 -1 -1 1 5 3 -3 3 -3 0 -2 1 4 1 0 1 1 3 2 -1 -1 -3 4 -3 3 5 1 -1 -1 -7 4 -4c1,0 1,-1 1,-2 -1,-1 -2,-1 -3,0z"/>
+   <g>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 28.308 9.3058)" width="118.725" height="22.5078"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 30.1005 11.2012)" width="118.725" height="12.8233"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 31.279 12.4484)" width="118.725" height="6.45635"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 32.1143 13.3362)" width="118.725" height="14.7964"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 33.2908 14.5819)" width="118.725" height="8.60814"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 34.271 15.6123)" width="118.725" height="17.2172"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 35.6438 17.0692)" width="118.725" height="5.37997"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 36.3706 17.8365)" width="118.725" height="8.78786"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 37.322 18.846)" width="118.725" height="14.7964"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 38.5812 20.1815)" width="118.725" height="8.60814"/>
+    <rect class="fil3" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 39.5379 21.191)" width="118.725" height="29.9502"/>
+   </g>
+   <rect class="fil2" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 6.93193 31.0012)" width="18.1139" height="230.636"/>
+   <rect class="fil2" transform="matrix(0.0513623 -0.0485153 0.0485152 0.0513625 3.38943 31.641)" width="18.1139" height="286.144"/>
+   <path class="fil1 str3" d="M15 25l-4 4"/>
+   <path class="fil1 str3" d="M17 26l-4 3"/>
+   <path class="fil1 str3" d="M25 35l-4 4"/>
+   <path class="fil1 str3" d="M24 34l-3 3"/>
+  </g>
+ </g>
+</svg>
